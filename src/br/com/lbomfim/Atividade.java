@@ -1,3 +1,5 @@
+package br.com.lbomfim;
+
 /**
  * @author Lucas
  */
