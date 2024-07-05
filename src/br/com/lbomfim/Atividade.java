@@ -25,7 +25,10 @@ public class Atividade {
             System.out.println("Qual a sua nota da terceira unidade?");
             float media3 = s.nextFloat();
 
-            float media = (media1 + media2 + media3) / 3;
+            System.out.println("Qual a sua nota da quarta unidade?");
+            float media4 = s.nextFloat();
+
+            float media = (media1 + media2 + media3 + media4) / 4;
             String result = exampleOfIf(media);
             System.out.println(" ");
             System.out.println("**************************************");
@@ -36,6 +39,10 @@ public class Atividade {
             System.out.println("Deseja gerar outra média?\nDigite 'sim' ou 'não'");
             response = s.next();
         }
+
+        System.out.println("********************");
+        System.out.println("Processo finalizado!");
+        System.out.println("********************");
     }
 
     public static String exampleOfIf(float media) {
@@ -43,11 +50,17 @@ public class Atividade {
         String result;
 
         if (media >= 7) {
-            result = "Parabéns! Você foi aprovado";
+            result = "●▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬●\n" +
+                    " ░░░░░░░░░░░VOCE FOI APROVADO!░░░░░░░░░░░░ \n" +
+                    "●▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬●";
         } else if (media >= 5) {
-            result = "Você está de recuperação. Estude mais!";
+            result = "●▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬●\n" +
+                    " ░░░░░░░VOCE FOI PARA A RECUPERAÇÃO░░░░░░░ \n" +
+                    "●▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬●";
         } else {
-            result = "Infelizmente, você foi reprovado!";
+            result = "●▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬●\n" +
+                    " ░░░░░░░░░░VOCE FOI REPROVADO!░░░░░░░░░░░░ \n" +
+                    "●▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬●";
         }
 
         return result;
