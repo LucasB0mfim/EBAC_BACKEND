@@ -1,0 +1,63 @@
+LIST
+
+Definição: Uma coleção ordenada que permite elementos duplicados.
+
+Implementações Comuns: ArrayList, LinkedList, Vector.
+
+º Características:
+- Indexação: Permite acesso direto aos elementos através de um índice.
+- Ordenação: Mantém a ordem de inserção dos elementos.
+- Duplicação: Permite elementos duplicados.
+- Uso Comum: Quando você precisa manter a ordem dos elementos e acessar elementos específicos rapidamente.
+
+Exemplo:
+List<String> list = new ArrayList<>();
+list.add("A");
+list.add("B");
+list.add("A");
+System.out.println(list); // Output: [A, B, A]
+
+
+QUEUE
+Definição: Uma coleção que representa uma fila (FIFO - First In, First Out).
+
+Implementações Comuns: LinkedList, PriorityQueue.
+
+º Características:
+- Ordenação: Não necessariamente mantém a ordem de inserção, dependendo da implementação (por exemplo, PriorityQueue ordena os elementos com base em uma prioridade).
+- Operações Principais: offer(), poll(), peek().
+- Duplicação: Permite elementos duplicados.
+- Uso Comum: Quando você precisa processar elementos na ordem em que foram inseridos (ou em uma ordem de prioridade).
+
+Exemplo:
+
+Queue<String> queue = new LinkedList<>();
+queue.add("A");
+queue.add("B");
+queue.add("A");
+System.out.println(queue); // Output: [A, B, A]
+
+
+Set
+
+Definição: Uma coleção que não permite elementos duplicados.
+
+Implementações Comuns: HashSet, LinkedHashSet, TreeSet.
+
+º Características:
+- Ordenação: HashSet não garante nenhuma ordem, LinkedHashSet mantém a ordem de inserção, e TreeSet mantém os elementos ordenados naturalmente ou por um comparador.
+- Duplicação: Não permite elementos duplicados.
+- Uso Comum: Quando você precisa garantir que não haverá elementos duplicados na coleção.
+
+Exemplo:
+
+Set<String> set = new HashSet<>();
+set.add("A");
+set.add("B");
+set.add("A");
+System.out.println(set); // Output: [A, B]
+
+º Diferenças Principais:
+- List permite elementos duplicados e mantém a ordem de inserção.
+- Queue também permite duplicados, mas seu comportamento de acesso depende de ser uma fila.
+- Set não permite elementos duplicados e pode ou não manter a ordem dos elementos, dependendo da implementação.
