@@ -1,0 +1,12 @@
+NUNCA TENTE TRATAR ESSES ERROS:
+-Error
+-VirtualMachineError
+-RuntimeException
+-NullPointerException
+-ArrayOutOfBoundsExcption
+
+PODE TRATAR ESSES ERROS:
+-Throwable
+-Exception
+-IOException
+-FileNotFoundException
