@@ -3,12 +3,13 @@
  */
 package br.com.lbomfim;
 
-import br.com.lbomfim.atividade.FeminoTest;
+import br.com.lbomfim.atividadeParte1.FeminoTest;
+import br.com.lbomfim.cliente.ClienteServiceTest;
+import br.com.lbomfim.contrato.ContratoServiceTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({PrimeiroTest.class, SegundoTest.class, TesteClienteTest.class, FeminoTest.class})
+@Suite.SuiteClasses({FeminoTest.class, ClienteServiceTest.class, ContratoServiceTest.class})
 public class AllTests {
-
 }

@@ -1,7 +1,7 @@
 /**
  * @author Lucas
  */
-package br.com.lbomfim.atividade;
+package br.com.lbomfim.atividadeParte1;
 
 import java.util.List;
 
